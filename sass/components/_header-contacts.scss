@@ -1,0 +1,32 @@
+.header-contacts {
+  display: flex;
+  align-items: center;
+}
+
+.header-contacts__item + .header-contacts__item {
+  margin-left: 50px;
+}
+
+.header-contacts__item {
+  display: flex;
+  align-items: center;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.header-contacts__link {
+  color: var(--primary-text-color);
+  fill: var(--primary-text-color);
+
+  transition: color var(--animation), fill var(--animation);
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+    fill: var(--accent-color);
+  }
+}
+
+.header-contacts__icon {
+  margin-right: 10px;
+}

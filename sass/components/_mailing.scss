@@ -1,0 +1,32 @@
+.mailing__input {
+  color: rgba(255, 255, 255, 0.9);
+  height: 50px;
+  width: 350px;
+  margin-right: 10px;
+  padding: 15px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  background-color: var(--alternative-bgc);
+
+  &::placeholder {
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+  }
+}
+
+.mailing__btn {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+
+  &::after {
+    content: "";
+    background-image: url(../images/icon-send.svg);
+    width: 24px;
+    height: 24px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-left: 10px;
+  }
+}
