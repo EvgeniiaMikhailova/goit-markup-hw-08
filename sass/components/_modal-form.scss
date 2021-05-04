@@ -1,5 +1,5 @@
 .modal-form {
-  width: 100%;
+  max-width: 100%;
 }
 
 .modal-form__group {
@@ -89,6 +89,11 @@
   letter-spacing: 0.03em;
 
   color: var(--primary-text-color);
+
+  @media screen and (max-width: 1199.98px) {
+    font-size: 12px;
+    line-height: 1.166;
+  }
 }
 
 .consent__icon {

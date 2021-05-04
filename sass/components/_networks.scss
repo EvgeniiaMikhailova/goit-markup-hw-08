@@ -39,8 +39,16 @@
   margin-top: 0px;
 
   color: var(--primary-bgc);
+
+  @media screen and (max-width: 1199.98px) {
+    text-align: center;
+  }
 }
 
 .networks__list--start {
   justify-content: left;
+
+  @media screen and (max-width: 1199.98px) {
+    justify-content: center;
+  }
 }

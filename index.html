@@ -25,18 +25,51 @@
             </ul>
         </nav>
 
-            <ul class="header-contacts">
+            <ul class="header-contacts header-contacts--wrap">
                 <li class="header-contacts__item"><a href="mailto:info@devstudio.com" class="link header-contacts__link"><svg  class="header-contacts__icon" width="16px" height="12px"><use href="./images/icons.svg#icon-envelope"></use></svg>info@devstudio.com</a></li>
                 <li class="header-contacts__item"><a href="tel:+380961111111" class="link header-contacts__link"><svg  class="header-contacts__icon" width="10px" height="16px"><use href="./images/icons.svg#icon-smartphone"></use></svg>+380961111111</a></li>
             </ul> 
+
+            <button class="mobile-menu-btn" data-menu-button>
+                <svg class="mobile-menu-icon">
+                    <use class="icon-menu" href="./images/form-icons.svg#icon-menu-open"></use>
+                    <use class="icon-close" href="./images/form-icons.svg#icon-menu-close"></use>
+                </svg>
+            </button>
         </div>  
     </header>
+
+    <!-- Мобильное меню -->
+    <div class="mobile-menu mobile-menu--flexbox" data-menu>
+        <ul class="mobile-nav">
+            <li class="mobile-nav__item"><a href="./index.html" class="link site-nav__link current">Студия</a></li>
+            <li class="mobile-nav__item"><a href="./portfolio.html" class="link site-nav__link">Портфолио</a></li>
+            <li class="mobile-nav__item"><a href="" class="link site-nav__link">Контакты</a></li>
+        </ul>
+
+        <div class="contact-us">
+        <ul class="mobile-contacts">
+            <li class="mobile-contacts__item"><a href="tel:+380961111111" class="link mobile-contacts__link-tel">+380961111111</a></li>
+            <li class="mobile-contacts__item"><a href="mailto:info@devstudio.com" class="link mobile-contacts__link-mail">info@devstudio.com</a></li>
+        </ul>
+
+        <ul class="mobile-networks">
+            <li class="mobile-networks__item"><a class="link mobile-networks__link" href="">Instagram</a></li>
+            <li class="mobile-networks__item"><a class="link mobile-networks__link" href="">Twitter</a></li>
+            <li class="mobile-networks__item"><a class="link mobile-networks__link" href="">Facebook</a></li>
+            <li class="mobile-networks__item"><a class="link mobile-networks__link" href="">LinkedIn</a></li>
+        </ul>
+        </div>
+    </div>
+   
 <!-- Основной материал -->
     <main>
         <!-- Герой -->
         <section class="hero__section">
+            <div class="hero__content">
             <h1 class="hero__title">Эффективные решения <br/>для вашего бизнеса</h1>
             <button class="btn" type="submit" data-modal-open>Заказать услугу</button>
+            </div>
             <div class="backdrop is-hidden" data-modal>
                 <div class="modal">
                     <button class="modal__btn-close" data-modal-close>
@@ -117,8 +150,12 @@
             <h2 class="section__title">Чем мы занимаемся</h2>
             <ul class="gallery__list">
                 <li class="gallery__item">
-                <div class="gallery__box">    
-                    <img src="./images/work/box1.jpg" alt="Ноутбук" width="370" height="294">
+                <div class="gallery__box">
+                    <picture>
+                        <source srcset="./images/work/desktop/box1_desktop.jpg 1x, ./images/work/desktop/box1@2x_desktop.jpg 2x"
+                            media="(min-width: 1200px)">
+                        <img src="./images/work/desktop/box1_desktop.jpg" alt="Ноутбук" width="370" height="294">
+                    </picture>    
                 <div class="gallery__overlay">
                     <p>десктопные приложения</p>
                 </div>
@@ -126,7 +163,11 @@
                 </li>
                 <li class="gallery__item">
                     <div class="gallery__box">
-                    <img src="./images/work/box2.jpg" alt="Смартфон" width="370" height="294">                  
+                        <picture>
+                            <source srcset="./images/work/desktop/box2_desktop.jpg 1x, ./images/work/desktop/box2@2x_desktop.jpg 2x"
+                                media="(min-width: 1200px)">
+                            <img src="./images/work/desktop/box2_desktop.jpg" alt="Смартфон" width="370" height="294">
+                        </picture>
                  <div class="gallery__overlay">
                     <p>мобильные приложения</p>
                 </div>
@@ -134,7 +175,11 @@
                 </li>
                 <li class="gallery__item">
                     <div class="gallery__box">
-                    <img src="./images/work/box3.jpg" alt="Планшет" width="370" height="294">
+                        <picture>
+                        <source srcset="./images/work/desktop/box3_desktop.jpg 1x, ./images/work/desktop/box3@2x_desktop.jpg 2x"
+                                 media="(min-width: 1200px)">
+                            <img src="./images/work/desktop/box3_desktop.jpg" alt="Планшет" width="370" height="294">
+                        </picture>
                  <div class="gallery__overlay">
                     <p>дизайнерские решения</p>
                 </div>
@@ -150,7 +195,12 @@
             <h2 class="section__title">Наша команда</h2>
             <ul class="team__list">
                 <li class="team__item">
-                    <img src="./images/team/Игорь.jpg" alt="Игорь Демьяненко" width="270" height="260">
+                    <picture>
+                        <source srcset="./images/team/desktop/img1_desktop.jpg 1x, ./images/team/desktop/img1@2x_desktop.jpg 2x" media="(min-width: 1200px)">
+                        <source srcset="./images/team/tablet/img1_tablet.jpg 1x, ./images/team/tablet/img1@2x_tablet.jpg 2x" media="(min-width: 768px)">
+                        <source srcset="./images/team/mobile/img1_mobile.jpg 1x, ./images/team/mobile/img1@2x_mobile.jpg 2x" media="(max-width: 767px)">
+                        <img src="./images/team/desktop/img1_desktop.jpg" alt="Игорь Демьяненко" width="450">
+                        </picture>
                 <div class="team__description">
                     <h3 class="team__title">Игорь Демьяненко</h3>
                     <p class="team__text">Product Designer</p>
@@ -179,7 +229,15 @@
                 </div>
                 </li>
                 <li class="team__item">
-                    <img src="./images/team/Ольга.jpg" alt="Ольга Репина" width="270" height="260">
+                    <picture>
+                        <source srcset="./images/team/desktop/img2_desktop.jpg 1x, ./images/team/desktop/img2@2x_desktop.jpg 2x"
+                            media="(min-width: 1200px)">
+                        <source srcset="./images/team/tablet/img2_tablet.jpg 1x, ./images/team/tablet/img2@2x_tablet.jpg 2x"
+                            media="(min-width: 768px)">
+                        <source srcset="./images/team/mobile/img2_mobile.jpg 1x, ./images/team/mobile/img2@2x_mobile.jpg 2x"
+                            media="(max-width: 767px)">
+                        <img src="./images/team/desktop/img2_desktop.jpg" alt="Ольга Репина" width="450">
+                    </picture>
                 <div class="team__description">
                     <h3 class="team__title">Ольга Репина</h3>
                     <p class="team__text">Frontend Developer</p>
@@ -208,7 +266,15 @@
                 </div>
                 </li>
                 <li class="team__item">
-                    <img src="./images/team/Николай.jpg" alt="Николай Тарасов" width="270" height="260">
+                    <picture>
+                        <source srcset="./images/team/desktop/img3_desktop.jpg 1x, ./images/team/desktop/img3@2x_desktop.jpg 2x"
+                            media="(min-width: 1200px)">
+                        <source srcset="./images/team/tablet/img3_tablet.jpg 1x, ./images/team/tablet/img3@2x_tablet.jpg 2x"
+                            media="(min-width: 768px)">
+                        <source srcset="./images/team/mobile/img3_mobile.jpg 1x, ./images/team/mobile/img3@2x_mobile.jpg 2x"
+                            media="(max-width: 767px)">
+                        <img src="./images/team/desktop/img3_desktop.jpg" alt="Николай Тарасов" width="450">
+                    </picture>
                 <div class="team__description">
                     <h3 class="team__title">Николай Тарасов</h3>
                     <p class="team__text">Marketing</p>
@@ -237,7 +303,15 @@
                 </div>
                 </li>
                 <li class="team__item">
-                    <img src="./images/team/Михаил.jpg" alt="Михаил Ермаков" width="270" height="260">
+                    <picture>
+                        <source srcset="./images/team/desktop/img4_desktop.jpg 1x, ./images/team/desktop/img4@2x_desktop.jpg 2x"
+                            media="(min-width: 1200px)">
+                        <source srcset="./images/team/tablet/img4_tablet.jpg 1x, ./images/team/tablet/img4@2x_tablet.jpg 2x"
+                            media="(min-width: 768px)">
+                        <source srcset="./images/team/mobile/img4_mobile.jpg 1x, ./images/team/mobile/img4@2x_mobile.jpg 2x"
+                            media="(max-width: 767px)">
+                        <img src="./images/team/desktop/img4_desktop.jpg" alt="Михаил Ермаков" width="450">
+                    </picture>
                 <div class="team__description">
                     <h3 class="team__title">Михаил Ермаков</h3>
                     <p class="team__text">UI Designer</p>
@@ -288,6 +362,8 @@
 <!-- Подвал -->
     <footer class="footer__section">
        <div class="conteiner flexbox">
+        
+        <div class="visit_us">
         <div class="footer__content">
             <a href="./index.html" class="logo footer__logo">Web<span class="logo--leight">Studio</span></a>
         <address class="adress">
@@ -298,6 +374,7 @@
             </ul>
         </address>
         </div>
+        
         <div class="footer__content footer__networks">
             <p class="networks__title">присоединяйтесь</p>
             <ul class="networks__list networks__list--start">
@@ -323,6 +400,8 @@
                 </a></li>
             </ul>
         </div>
+        </div>
+
         <div class="footer__content">
             <p class="networks__title">Подпишитесь на рассылку</p>
             <form class="mailing__form">
@@ -330,8 +409,9 @@
                 <button class="btn mailing__btn" type="submit">Подписаться</button>
             </form>
         </div>
-            </div>
+        </div>
     </footer>
+    <script src="./js/menu.js"></script>
     <script src="./js/modal.js"></script>
 </body>
 </html>
