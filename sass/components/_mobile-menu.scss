@@ -49,6 +49,18 @@
   &.is-open {
     top: 0;
   }
+
+  @media screen and (max-width: 400px) {
+    height: 90vh;
+  }
+
+  @media screen and (max-width: 350px) {
+    height: 80vh;
+  }
+
+  @media screen and (max-width: 300px) {
+    height: 70vh;
+  }
 }
 
 .mobile-nav__item {
@@ -60,14 +72,17 @@
 
   @media screen and (max-width: 400px) {
     font-size: 35px;
+    margin-bottom: 30px;
   }
 
   @media screen and (max-width: 350px) {
     font-size: 30px;
+    margin-bottom: 25px;
   }
 
   @media screen and (max-width: 300px) {
     font-size: 25px;
+    margin-bottom: 20px;
   }
 }
 
@@ -116,6 +131,18 @@
 
 .mobile-contacts__item {
   margin-bottom: 32px;
+
+  @media screen and (max-width: 400px) {
+    margin-bottom: 30px;
+  }
+
+  @media screen and (max-width: 350px) {
+    font-size: 25px;
+  }
+
+  @media screen and (max-width: 300px) {
+    font-size: 20px;
+  }
 }
 
 .mobile-networks {
